@@ -37,7 +37,7 @@ export default function Dashboard() {
           setPageCount(Math.ceil(count / limit));
         }
       });
-  }, [page, Url, navigate, token]);
+  }, [page, Url, navigate, token, count, limit, pageCount]);
 
   const handleChange = (event, value) => {
     setPage(value);
